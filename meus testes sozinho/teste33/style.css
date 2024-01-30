@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'picas';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'droid';
+    src: url('fonts/idroid.otf') format('opentype');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font: normal normal 1em Arial, sans-serif;
+    background-color: gray;
+}
+header{
+    font-family: 'picas';
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.215);
+    margin-top: 15px;
+}
+main{
+    width: 350px;
+    background-color: white;
+    margin: 30px auto 30px auto;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.224);
+}
+#calculos{
+    font-family: 'droid';
+}
+#num1{
+    border-radius: 15px;
+    padding: 2px 5px 2px 5px;
+    margin: 5px auto 5px auto;
+}
+#botao, #calcular{
+    margin: 4px 3px 9px 3px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#botao:active{
+    background-color: black;
+    color: white;
+}
+select{
+    width: 225px;
+    padding: 4px;
+}
+#calcular:hover{
+    background-color: red;
+    color: black;
+}
+#calcular:active{
+    background-color: black;
+    color: white;
+}
+#resposta{
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+footer{
+    text-align: center;
+    margin-top: 250px;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+a:active{
+    color: yellow;
+}

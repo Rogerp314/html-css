@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fimose';
+    src: url('fonts/CINTARY-Regular.otf') format('opentype'), url('fonts/CINTARY-Regular.ttf') format('truetype');
+}
+body{
+   font: normal 1em Arial, sans-serif;
+   background-image: linear-gradient(90deg, #2F40FA, #2937D6);
+}
+
+h1, h2{
+    font-family: 'fimose', serif;
+    font-style: normal;
+    text-align: center;
+}
+h1{
+    margin: auto;
+    width: 175px;
+    padding: 20px;
+}
+h2{
+    position: relative;
+    top: -25px;
+}
+#pepino:hover{
+    color: #176817;
+    cursor: pointer;
+}
+section{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 6px #131961a9
+}
+#piz:hover{
+    color: rgb(142, 27, 27);
+    cursor: pointer;
+}
+#comer, #conf{
+    cursor: pointer;
+}
+#resposta{
+    text-align: center;
+    position: relative;
+    top: 40px;
+    color: white;
+}
+#resposta:hover{
+    color: #c016b2;
+    cursor: pointer;
+}

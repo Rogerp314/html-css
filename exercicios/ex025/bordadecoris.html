@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas decoradas</title>
+    <style>
+        body{
+            font: normal normal 1em Arial, sans-serif;
+        }
+        h1{
+            border: 20px solid transparent;
+            padding: 10px;
+            text-align: center;
+            /*essa declaraçao a seguir e nova e possivelmente inutil*/
+           /* border-image-source: url('nazi.png');
+            border-image-slice: 37;
+            border-image-repeat: repeat;
+            da pra fazer um shorthand cagado*/
+            border-image: url('nazi.png') 37 repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste de Borda</h1>
+    </header>
+    <main></main>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste de velocidade (Multa)</title>
+</head>
+<body>
+    <header>
+        <h1>Hora de Testar as Velocidades</h1>
+        <p>Se passar da velocidade <strong>limite</strong> receberá <span id="multa"><strong>Multa</strong></span></p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Ajuda</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre nós</a>
+        </nav>
+    </header>
+    <main>
+        <p>Qual a velocidade de seu automóvel?</p>
+        <input type="number" name="vel" id="velocidade">
+        <input type="button" value="Confirmar" id="botao" onclick="multa()">
+        <p id="resposta"></p>
+    </main>
+    <footer>
+        <p>Esse site foi feito por <a href="https://github.com/Rogerp314" target="_blank" rel="external">P. Roger</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

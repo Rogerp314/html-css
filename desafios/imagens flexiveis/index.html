@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.svg" type="image/x-icon">
+    <title>Desafio</title>
+</head>
+<body>
+ <h1>Desafio de uma imagem com comprimento constante e largura flexivel</h1>
+ <hr>
+ <p>Aqui temos uma imagem com comprimento constante e largura <strong>variavel</strong>:</p>
+ <picture>
+    <source media="(max-width:630px )" srcset="img/foto-258.png" type="image/png">
+    <source media="(max-width:1020px )" srcset="img/foto-619.png" type="image/png">
+    <img src="img/foto-full.png" alt="paisagem com uma mulher de braços abertos">
+ </picture>
+</body>
+</html>

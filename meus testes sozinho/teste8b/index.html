@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon pika.svg" type="image/x-icon">
+    <title>Teste completo</title>
+    <!--As configuraçoes do site estao na tag head e o conteudo dele esta na tag body-->
+</head>
+<body>
+   <h1>Hora de colocar todos os meus conhecimentos nesse site</h1> 
+   <hr>
+   <h2>Como colocar favicon</h2>
+   <p>Para colocar favicon devo colocar a tag <q>link:favicon</q> no head e apertar ctrl+espaço para escolher o favicon alem que o melhor tipo de arquivo e .svg.</p>
+   <h2>Como colocar imagens na mesma pasta do index, numa sub-pasta e num link externo:</h2>
+   <p>Para colocar a imagem da mesma pasta e so colocar a tag <q>img</q>, e no parametro <q>alt</q> devo colocar a descriçao da imagem e escolher a imagem com ctrl+espaço alem de que tenho que mudar a resoluçao em px:</p>
+   <img src="logo gow.png" alt="logo do jogo god of war">
+   <p>Agora colocar uma imagem que esta localizada em uma sub-pasta e a mesma coisa porem na hora de selecionar a imagem e so selecionar a pasta onde ela esta:</p>
+   <img src="img/kratos.jpg" alt="imagem de Krastos olhando para camera">
+   <p>Por fim para colocar uma imagem em outro site e so copiar o endereço da imagem:</p>
+   <img src="https://img.mypcards.com/img/0/10175/115335/86a517804a00c0862ae340dc3c1aef40.png" alt="imagem da capa do jogo god of war">
+   <h2>Como colocar emoji e caracteres</h2>
+   <p>Para colocar emojis devo colocar a tag <q>&<q>nome do caractere;</q></q> como exemplo: <br> &Delta; &copy; e &Sigma;</p>
+   <p>Agora para colocar emojis e so colocar a tag <q>&#x<q>codigo do emoji</q></q> ou e so copiar no site <ins>emojipidea</ins>: <br> 🤓 e &#x1F978, o ultimo foi com a tag</p>
+   <h2>Como colocar <q>recados</q> nos codigos</h2>
+   <p>Para coloar um <q>recado</q> e so colocar a tag &lt;! --&gt; sem espaço</p> <!--como feito agora-->
+   <h2>Como colocar em negrito os termos</h2>
+   <p>Com a tag strong posso colocar em negrito os  <strong>termos como esse</strong></p>
+   <h2>Como colocar a tag no site sem programar</h2>
+   <p>Ultilizo as tags & lt e & gt sem os espaços</p>
+   <h2>Principais formataçoes</h2>
+   <h3>Marcaçao como se fosse um marca texto</h3>
+   <p>Devo ultilizar a tag mark para marca o termo que quero <mark>como esse</mark>, sendo essa cor a padrao e posso mudar a cor na propria tag se for para ela em especifico ou para pagina inteira e no head e se for para o site como um todo e num link externo</p>
+   <p>Nesta frase temos um <mark style="background-color: aqua;">termo marcado</mark> com outra cor com o comando das CSS style background- color</p>
+   <h3>Italico/enfase de forma semantica e nao semantica</h3>
+   <p>Com a tag nao semantica i posso colocar termos em italico ou com a tag semantica em como exemplo respectivamente: <br> Nesta frase, temos um <i>termo em italico</i> com a tag i <br> E nesta frase temos um <em>termo em italico</em> com a tag em</p>
+   <p>Prefiro pessoalmente usar a tag em e tambem ela e a mais correta.</p>
+   <h3>Como colocar as letras grandes e pequenas</h3>
+   <p>A tag big nao semantica serve para deixar as letras grandes e a tag small serve para deixar a letras pequena sendo essa semantica pelas letras pequenas em contrato, mas em geral devo usar CSS pq isso e forma e nao semantica, isso ja e HTML:</p>
+   <p>Nesta frase, temos um termo <big>grande</big> e um <small>pequeno</small></p>
+   <h3>Texto deletado/inserido</h3>
+   <p>Para os textos que devem ser lidos mais nao considerados devo colocar a tag del como <del>esse termo</del></p>
+   <p>E para textos que devem ter uma enfase temos a tag ins <ins>como esse termo</ins></p>
+   <h3>Texto sobescrito e subescrito</h3>
+   <p>para textos sobescritos devo colocar a tag sup como esse x<sup>3</sup>+x<sup>2</sup>+2x+69=0</p>
+   <p>E para textos com termos abaixo do padrao e com a tag sub como esse C<sub>9</sub>H<sub>13</sub>N</p>
+   <h2>Como <q>envelopar um texto numa tag</q></h2>
+   <p>E simples e so selecionar o texto a aperta ctrl+shift+p e aperta enter ou escrever abb e clicar enter e escrever a tag</p>
+   <h2>Outras formataçoes</h2>
+   <h3>Formataçao e Pre-Formataçao de codigos</h3>
+   <p>Para colocar um codigo de programacao com a fonte monolateral (mesmo tamanho) e com a tag code:</p>
+   num = int(input('Digite um numero'))
+                if num % 2 == 0:
+                print(f '0 {num} e PAR)
+                
+<p>O exemplo acima foi sem a tag</p>
+<code>
+    num = int(input('Digite um numero'))
+                    if num % 2 == 0:
+                    print(f '0 {num} e PAR)
+</code>
+<p>E esse foi com, mas perceba que os codigos estao todos do mesmo tamanho e para prezervar a indetidade do codigo e com a tag pre:</p>
+<pre><code>num = int(input('Digite um numero'))
+    if num % 2 == 0:
+    print(f '0 {num} e PAR)</code></pre>
+    <p>obs: para fazer um teste de como esta os paragrafos tem um comando q e o lorem que e um monte de texto aleatoria so para teste: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam fuga, cum sequi soluta ad magnam sed dolor saepe blanditiis hic laboriosam. Quod ad, repudiandae dicta eum dolorum necessitatibus nesciunt iusto.</p>
+    <h3>Citaçoes simples (sem quebras e limk do texto citado)</h3>
+    <p>Para citar sem algum texto de forma semantica que o HTML entenda e so colocar a tag q como: <q>Eu comi o cu de um viado</q></p>
+    <h3>Citaçoes completas (com link e quebras, igual ao texto original)</h3>
+    <p>Para esse tipo de citaçao devo ultilizar a tag blockquote:</p>
+<p>Como dito por Stephen Hawking em seu livro Uma breve historia do tempo <blockquote>A maioria das pessoas acharia um tanto ridicula a imagem do nosso universo como uma torre infinita de tartarugas.</blockquote>    </p>
+    <p>Esse e sem as aspas porem se eu quiser posso colocar a tag q.</p>
+    <p>obs: para tirar o espço dos texto como na citaçao anterior clique em shift+tab e para adicionar clique tab</p>
+    <h3>Abreviaçoes</h3>
+    <p>Posso usar para colocar o significado das siglas como <abbr title="Hipyer Text Mukup Lenguege">HTML</abbr> com a tag abbr.</p>
+    <h3>Texto invertido</h3>
+    <p>O mais inutil porem eu aprendi,conhecimento nunca e demais:</p>
+    <p>Para colocar um texto invertido devo usar a tag bdo <br> <bdo dir="rtl">Eu amo minha namorado gostosa pra cacete chamada Gabrielle.</bdo></p>
+    <h3>Hierarquia de titulos</h3>
+    <p>h1 e o titulo principal e o h2 sao assutos relacionados ao h1 e o h3 sao assuntos do titulo h2 e assim por diant, como feito nesse site.</p>
+    <p>Ca esta tudo q eu sei ate ate a hora 21:55 do dia 12/7/23, sendo q começei a estudar no dia 3/7/23, ou seja, 9 dias estudando (contando o fim de semana q estava na casa da gostosa).</p>
+</body>
+</html>

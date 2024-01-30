@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/love\ story\ ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                -opentype (otf)
+                -truetype (ttf)
+                -embedded-opentype
+                -truetype-aat
+                -svg
+                Na url tem que copiar igualzinho o nome do arquivo que esta no Visual
+                Para colocar mais de uma fonte tem que colocar virgula depois do format()
+                Na declaraçao font-family e a onde coloca-se o nome que quiser na fonte
+                Alem disso no seletor font-face se coloca todas as caracteristicas da fonte como peso, estilo e etc.
+            */
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            /*Para aplicar a fonte baixada e so colocar o nome dado no font-face na declaraçao font-family*/
+        }
+        header{
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Fontes Externas</h1></header>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloremque. Sunt aperiam perspiciatis nostrum aliquam eos assumenda, deserunt ipsum perferendis a animi iure officiis hic facere eum, dolore quidem illum!</p>
+    <header><h2>Subtitulo</h2></header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora culpa necessitatibus deleniti, magnam alias placeat cupiditate ratione, nemo earum porro voluptates quia neque consequuntur magni nam sunt? Quo, doloribus.</p>
+</body>
+</html>

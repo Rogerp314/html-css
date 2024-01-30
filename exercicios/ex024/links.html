@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*Psudo classe sao somente ":", enquanto no pseudo-elemento que muda o conteudo do elemento HTML, diferente da pseudo-classe que muda o estado do elemento, o pseudo-elemento e simbolizado como "::"*/
+        body{
+            font: normal 1em Arial, sans-serif;
+        }
+        a{
+            color: blue;
+            text-decoration: none;/*Serve para tirar o sublinhado FEIO dos links*/
+            font-weight: bold;
+        }
+        a:visited{ /*Piseudo classe para diferenciar um link visitado e nao visitado*/
+            color: darkblue;
+        }
+        a:hover{
+            text-decoration: underline; /*Assim fica mais foda*/
+            color: #000000;
+        }
+        a:active{ /*Essa pseudo classe serve para quando for clicado no link aconteça oq estiver no seletor*/
+            color: red;
+
+        }
+        a::after{ /*Esse "after" serve para adicionar um conteudo qualquer depois do conteudo original de HTML.*/
+            content: ' [link]'; /*content e conteudo e serve para adicionar o conteudo de fato.*/
+            font-weight: normal;
+            color: darkblue;
+        }
+        #principal::before{
+            content: '⇒';
+            font-weight: bold;
+        }
+        #principal::after{
+            content: '⇚';
+            font-weight: bold;
+        }
+        /*
+        #=id
+        .=class
+        :=pseudo-class
+        ::=pseudo-element
+        >= filho
+    </style>
+</head>
+<body>
+    <h1>Personalizando os links em geral</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=b9AMFf5Ih7Y" target="_blank" rel="external">Musica do Death</a></li>
+        <li><a href="https://www.youtube.com/watch?v=EtapU5nI6G4" target="_blank" rel="external" id="principal">Musica do Nirvana</a></li>
+        <li><a href="https://www.youtube.com/watch?v=953PkxFNiko" target="_blank" rel="external">Musica Pork Soda</a></li>
+    </ul>
+</body>
+</html>

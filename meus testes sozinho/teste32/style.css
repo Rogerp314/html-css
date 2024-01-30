@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+body{
+    background-color: rgba(0, 0, 0, 0.772);
+    font: normal normal 1em Arial, sans-serif;
+}
+header{
+    text-align: center;
+    margin: 10px auto 50px auto;
+}
+h1{
+    color: #ff8400;
+    font: italic bold 3.25em 'bebas';
+}
+#frase{
+    font: normal bold 1.75em 'bebas';
+    color: red;
+}
+main{
+    background-color: white;
+    width: 400px;
+    margin: 70px auto 100px auto;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 3px 4px 5px #0000003c;
+}
+#idade{
+    position: relative;
+    left: 76px;
+    border-color: #ff8400;
+}
+#nome{
+    border-color: #ff8400;
+}
+#but{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 2px;
+}
+#but:active{
+    color: black;
+    background-color: white;
+}
+footer{
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font: italic bolder 1em Arial, sans-serif;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+a:active{
+    color: black;
+}
+a:active::after{
+    content: 'SOS';
+}

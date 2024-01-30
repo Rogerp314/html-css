@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora - Tabela</title>
+</head>
+<body>
+    <header>
+        <h1>A Melhor Tabela de TODAS!</h1>
+    </header>
+    <main>
+        <div id="calculos">
+            <p>Escolha um numero: <input type="number" name="num1" id="num1"></p>
+            <p><input type="button" value="Confirmar" onclick="num()" id="botao"></p>
+                <select name="tabelas" id="tabela" size="10">
+                </select>
+        </div>
+        <p>
+            <input type="button" value="Calcular" id="calcular" onclick="resposta()">
+        </p>
+        <p id="resposta">Resposta...</p>
+    </main>
+    <footer id="autor">
+        <p>Os Direitos Autorais desse site pertencem a <strong><a href="https://github.com/Rogerp314" target="_black" rel="external">P. Roger</a></strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

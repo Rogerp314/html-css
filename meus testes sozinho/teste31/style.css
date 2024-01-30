@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'cuzinho';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+body{
+    background-image: linear-gradient(90deg, #797979, #777777);
+    font: normal normal 1em Arial, sans-serif;
+}
+header{
+    font: italic bold 1.25em 'cuzinho', sans-serif;
+    background-image: linear-gradient(90deg,#ffffff ,#797979);
+    padding: 10px 20px 8px 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.318);
+}
+main{
+    background-color: white;
+    width: 350px;
+    margin: 30px auto 40px auto;
+    padding: 1px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.175);
+}
+footer{
+    text-align: center;
+}
+#lista{
+    width: 200px;
+}

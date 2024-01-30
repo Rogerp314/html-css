@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    font: normal 1em Arial, sans-serif;
+    text-align: justify;
+    background-color: #F0F2F5;
+}
+main{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -120px;
+    left: 525px;
+}
+#texto{
+    font: normal 24px Arial;
+}

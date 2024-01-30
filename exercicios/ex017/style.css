@@ -1,0 +1,22 @@
+/*{ 
+    height: 100%;
+} /* Esse * e a configuraçao global das CSS*/
+body{
+    text-align: center;
+    background-color: rgb(127, 251, 255);
+    background-attachment: fixed;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #0935E1,#4564D2,#5367AD);
+}
+.insta{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    background-image: radial-gradient(circle ,#F20574,#BF04B3,#9904D9,#F2A30F,#F2780C );
+}

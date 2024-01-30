@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+    background-color: #69EA8B;
+    font: normal 1em Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #224D2E;
+}
+#principal{
+    background-color: #357546;
+    color: white;
+    text-align: center;
+    font: italic bold 2em Verdana, serif;
+}
+.topico{
+    text-align: center;
+
+}
+#texto{
+    text-align: justify;
+    color: red;
+}
+.basico{
+    color: #04a02d;
+    text-align: left;
+}
+.intermediario{
+    color: #a06c04;
+    text-align: center;
+}
+.avançado{
+    color: #a00404;
+    text-align: end;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.destaque{
+    background-color: #a63b3bd6;
+    text-align: end;
+}
+
+
+
+/* O que for id em HTML e # em CSS (so pode um elemento por documento HTML)
+                E
+   O que for class em HTML e . em CSS (pode varios elementos em um documento HTML)

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'penes';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'penes';
+
+    --cor0: #000BE6;
+    --cor1: #242BB3;
+    --cor2: #89b2fe;
+    --cor3: ;
+}
+
+body{
+    background-color: var(--cor2);
+    font: normal normal 1em var(--font-padrao);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+header > h1{
+    font-size: 3em;
+    font-family: 'penes';
+    padding: 10px;
+    text-align: center;
+    min-width: 504px;
+}
+header > p{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#multa:hover{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: black;
+    cursor: pointer;
+    transition-duration: .7s;
+}
+nav{
+    background-color: var(--cor0);
+    padding: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.256);
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor0);
+    border-radius: 5px;
+    transition-duration: .25s;
+}
+main{
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+main > p{
+    padding: 10px;
+}
+#botao{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 1.5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#botao:active{
+    background-color: black;
+    color: white;
+}
+footer{
+    text-align: center;
+    margin: 125px;
+}
+footer > p > a{ /* Tive que fazer isso pois se não colocar o 'p', o studio não reconhece, então eu fiz um DOM ( de forma simplificada é uma árvore)*/
+    color: white;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    color: red;
+}
+footer>p>a:active::after{
+    color: green;
+    content: ' LINDO!';
+}

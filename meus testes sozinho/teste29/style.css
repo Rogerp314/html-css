@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body{
+    font: normal normal 1em Arial, sans-serif;
+}
+#testo{
+    background-color: lightgray;
+    width: 400px;
+    height: 400px;
+    border: 10px;
+    border-style: solid;
+    border-color: blue;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    margin: auto;
+}
+a{
+    border: 50px;
+    border: groove;
+    border-color: red;
+    padding: 50px;
+}

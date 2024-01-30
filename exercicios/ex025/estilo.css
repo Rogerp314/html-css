@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    color: red;
+    text-decoration: none;
+    border: 50px solid red;
+    padding: 20px;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+a:active{
+    color: green;
+}
+h1{
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+
+
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: darkblue;
+    Aqui esta a ordem do shorthand do border,
+    border-width, style, color*/
+    border: 10px solid darkblue;
+
+    /*padding-top: 10px;
+    padding-rigth:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    Shorthand do padding:
+    Se eu quiser valores diferentes para cada lado do padding o shorthand e na sequencia horaria, ou seja, top, rigth, botton e left ou se eu quiser um valor unico para todos os lados e so colocar o padding e o valor*/
+    padding: 10px;
+
+    /*
+    O shorthand do margin e a mesma coisa do padding
+    se eu quiser centralizar com o margin e ainda manipular o top e o  bottom e so colocar auto no lugar do rigth e left*/
+    margin: 10px auto 80px auto;
+
+    /*outline-width: 5px;
+    outline-style: dashed;
+    outline-color: red;
+    o outline tem o shorthand igual a do border*/
+
+    outline: 5px dashed red;
+
+    /*O padding que e somente ele serve para colocar todos os lados com o mesmo valor
+    e se for colocar valores diferentes tem que começar pelo 'top' e girar em sentido horario.*/
+}
+
+
+/*Na configuraçao de caixas o 'display: block;' e a declaraçao que transforma algo em box-level, praticamente todas as declaraçoes que funcionam em um funciona no outro, e vice-versa.
+Caixas iline-block sao elementos do display que e um iline mas tem caracteristicas de block com altura e largura*/

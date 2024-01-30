@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Pascal';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(90deg, #003cff, #6a00ff);
+    font: normal 1em 'Pascal', serif;
+}
+h1{
+    text-shadow: 2px 2px 3px #5401c9be;
+}
+#caixa{
+    margin: auto;
+    position: relative;
+    top: 100px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px; /*Essa declaraçao serve para deixar o texto no centro do fundo*/
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #5401c9be;
+}

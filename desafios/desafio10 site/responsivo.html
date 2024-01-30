@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+            /*O min-width e o max-width sao o menor tamanha de largura e o maior tamanho de largura respectivamente, sendo assim com esses dois valores podemos tornar um site mais resposivel do que somente usar width.*/
+            /*width: 800px;*/
+            min-width: 300px;/*pq 320px? pq e a largura dos celulares antigos*/
+            max-width: 800px;
+            margin: auto;
+        }
+        /*Para fazer uma imagem se adaptar ao tamanho da tela pasta colocar o nome da tag da imagem, como id,class ou somente img, depois no bloco coloca 'width: 100%;'. Ou colocar num picture e mudar a imagem de acordo com o tamanho da tela
+        Na verdade verdadeira, devemos usar as duas tecnicas para ficar mais bonito de se ver alem que e mais legal de se fazer.*/
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed labore excepturi earum, alias magni iusto dolor nobis dolores ex, pariatur vitae fuga delectus. Aperiam quae, numquam quibusdam sint debitis molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, veritatis assumenda? Repudiandae voluptatibus quam maxime praesentium ad eligendi provident, autem alias qui officia laboriosam molestiae reiciendis ipsa? Optio, recusandae doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, temporibus suscipit. Omnis atque quisquam minima eius deserunt ab optio, nesciunt culpa error odit maxime. Nam architecto dolorum nemo mollitia ratione!
+                <div>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="dados/imagens/irina-blok-pq.jpg">
+                        <img src="dados/imagens/irina-blok.jpg" alt="Irina Block">
+                    </picture>
+                </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed labore excepturi earum, alias magni iusto dolor nobis dolores ex, pariatur vitae fuga delectus. Aperiam quae, numquam quibusdam sint debitis molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, veritatis assumenda? Repudiandae voluptatibus quam maxime praesentium ad eligendi provident, autem alias qui officia laboriosam molestiae reiciendis ipsa? Optio, recusandae doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, temporibus suscipit. Omnis atque quisquam minima eius deserunt ab optio, nesciunt culpa error odit maxime. Nam architecto dolorum nemo mollitia ratione!</p>
+        </p>
+    </main>
+</body>
+</html>

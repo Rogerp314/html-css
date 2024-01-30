@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.svg" type="image/x-icon">
+    <title>Teste de idade</title>
+</head>
+<body>
+    <header><h1>Verificador de Idade</h1></header>
+    <main>
+        <div><p id="dados">Coloque o ano de nascimento: <input type="number" name="idade" id="idade">  <input type="button" value="Confirmar" onclick="idade()" class="botao"></p></div>
+        <div id="sexo"><input type="radio" name="sexo" checked><label for="sex">Masculino</label>
+        <input type="radio" name="sexo"><label for="sex">Feminino</label></div>
+        <div class="resposta">Esperando dados...</div>
+        <div class="imagem"></div>
+    </main>
+    <footer>&Delta;</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

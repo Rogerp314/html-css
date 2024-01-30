@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mideas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos ou somente mude o tamanho da janela do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Audio</h1>
+    <p>Existem duas formas de colocar audio em HTML5.</p>
+    <ul>
+        <li>Usando a tag <q>audio</q></li>
+    </ul>
+            <audio src="midia/divkid.mp3" controls autoplay></audio>
+            <p>Obs: Para colocar audios em HTML5 devo ultilizar a tag <q>audio</q> escolher a origem do arquivo no parametro <q>src</q> e colocar os parametros <q>controls</q> e <q>autopaly</q>.</p>
+            <!--Tipos de arquivos compatives sao MP3, OGG e WAV-->
+    <ul>
+        <li>Outra forma melhor (ultilizar esta sempre)</li>
+    </ul>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/divkid.mp3" type="audio/mpeg">
+        <source src="midia/divkid.ogg" type="adio/ogg">
+        <source src="midia/divkid.wav" type="audio/wav"> <!--wav e muito pesado n usar muito-->
+        <p>Seu navegador infelismente nao suporta audio. <a href="midia/divkid.mp3" download="midia/divkid.mp3" type="audio/mpeg">Clique aqui para fazer o download do arquivo MP3</a></p>
+    </audio>
+    <p>Desta forma consigo fazer com que o navegador do usuario carregue o tipo de arquivo compativel de cima para baixo, ou seja, a organizaçoa dos sources importa. Alem de que para fazer desta maneira eu escrevi a tag <q>audio</q> e tirei o parametro <q>src</q> e coloquei somente a tag <q>source:src</q> entre as tags &lt;audio&gt; e &lt;/audio&gt;</p>
+    <p>Tambem coloquei um recado num paragrafo se nao carregar nenhum dos tipos de arquivos e usei a tag <q>a</q> com os parametros de dowload e no <q>type</q> coloquei a mesma coisa do type da tag <q>audio</q> que e <q>audio/ <q>tipo do arquivo</q></q>.</p>
+    <p>Tambem temos os parametros nesta forma, como preload que temos tres tipos</p>
+    <ul>
+        <li>auto: Carrega todo o arquivo junto com o site fazendo ele ficar pesando e lento (nao recomendado)</li>
+        <li>metadata: Carrega poucos dados do arquivo junto com o site e ao clicar no icone de play ele carrega o arquivo todo (mais usado)</li>
+        <li>none: Nao carrega nada (nem faz sentido ter isso mas ta bom)</li>
+    </ul>
+</body>
+</html>

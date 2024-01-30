@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando lnks externos (links que direcionam o usuaria para outro site)</h1>
+    <hr>
+    <p>Voce pode acessar esse <a href="https://youtu.be/nXtU_ckgnl4" target="_blank" rel="external">maravilhoso video</a></p>
+    <p>Obs: A tag que se usa para direcionar alguem com um link externo e a tag a (a de ancora, hiperlink), sendo o paramentro href a referencia da URL completa.</p>
+    <p>Voce tambem pode acessar esse <a href="https://www.youtube.com/@jogandofoddaci" target="_blank" rel="external">canal no Youtube.</a></p>
+    <p>Obs: Esses parametros serve para quando clicar na ancora e para nao fechar a janela do meu site e sim abrir uma nova com os parametros target="_blank" rel="external" sendo o primeiro parametro para dizer que o deve-se criar uma janela nova sem fechar a original, de onde clico o usuario e o rel (referente ha) para dizer o tipo de link usado, sem essas tags os links quando clicados fecharam a janela do site original alem de rel temos outros parametros q sao:</p>
+    <dl>
+        <dt>next:</dt>
+        <dd>indica um link para a proxima pagina do site</dd>
+        <dt>prev:</dt>
+        <dd>Indica que o link e para uma pagina anterior</dd>
+        <dt>author:</dt>
+        <dd>Indica um link para o site do autor do artigo atual</dd>
+        <dt>external:</dt>
+        <dd>Indica um link para um outro site</dd>
+    </dl>
+    <h1>Usando links internos</h1>
+    <p>Obs: Os links internos servem para relacionar uma pagina com outra do mesmo server, enquanto os externos sao para paginas fora do server. A palavra index significa indice que e a onde o site vai abrir para o usuario ent vou criar outras paginas para fazer os links externos. Usando a tag a e colocando no parametro href o arquivo da segunda pagina.</p>
+    <p>Voce pode acessar minha <a href="pag002.html" target="_self" rel="next">segunda pagina aqui</a>.</p>
+    <h1>Links para dowloand</h1>
+    <ul>
+        <li><a href="livro/Mecanica quantica.pdf" download="livro de mecanica quantica.pdf" type="application/pdf">link para download do livro em PDF</a></li>
+        <li><a href="livro/mecanica quantica.zip" download="livro de mecanica quantica.pdf" type="application/zip">link para download do livro compactado em ZIP</a></li>
+    </ul> <!--O # siginifica que o parametro ou qualquer outra coisa esta vazio.-->
+    <p>Para um link de download coloca-se dois parametros que sao o <q>download</q> que e a descriçao do arquivo a ser baixado(colocar o nome do arquivo) e o <q>type</q> que indica ao navegador o tipo de arquivo a ser baixado. </p>
+    <p>Existe um site com todos as media types (isso serve para que o navegador baixe o arquivo no tipo certo de cada arquivo) e este e o <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">link</a></p>
+</body>
+</html>

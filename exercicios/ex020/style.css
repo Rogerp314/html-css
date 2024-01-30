@@ -1,0 +1,49 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: justify;
+}
+header{
+    font-size: 1em;
+}
+h1{
+    /*Tem como condensar todos esse comandos em um so, ultilizando o comando "font" e ele tem a seguinte ordem de parametros:
+    font: font-style -> font-weigth -> font-size -> font-family
+    Ou seja, no lugar de usar essas linhas:
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    Eu uso somente uma.
+    */
+    font: italic bolder 3em Arial, sans-serif;
+}
+h2{
+    font: italic lighter 2em Arial;
+}
+
+/*
+font-size e o parametro que faz com que eu possa mudar o tamanho da fonte.
+
+Medidas Absolutas:
+cm, mm, px, in(polegada), pt(ponto), pc
+
+Medidas Relativas
+em(altura relativa ao "M" da fonte), ex (altura relacionada a altura-x da fonte), rem(altura relativa a fonte em si), vw(Porcentagem da largura em relaçao a resoluçao da tela do usuario), vh (Porcentagem em relaçao a altura da tela do usuario) e %. 
+Obs: Como medida de segurança o site oficial (centro de regras) diz para usar somente o px e em.
+Obs: 16px e normalmente o tamanho normal da fonte.
+    16px geralmente=1em, ou seja, 1em e o tamanho geral da fonte em questao.
+Peso e o quao 'magra' ou 'gorda' e o tipo da fonte, normal, strong etc.
+O comando ultilizado para mudar o peso da fonte e "font-weigth", weigth = peso.
+Pesos literais: 
+lighter, normal, bold e bolder.
+Pesos numericos: 
+Esse tipo de peso começa em 100 e termina em 900
+100-900
+Obs: Em pesos numericos a variaçao ocorre em 100 em 100, tipo 100-200, nao existe o meio do caminho como 175.
+O font-style serve para mudar o estilo da fonte em si, tipo mudar o estilo da fonte para italico.
+text-decoration:underliner; serve para fazer um sublinhado no texto em questao.
+shorthand siginfica "maozinha", esse comando serve para condensar, ou seja, juntar os comandos de fontes como size, weigth, family, style e etc em um so comando.
+*/

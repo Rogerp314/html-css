@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste fodastico</title>
+</head>
+<body>
+    <h1>Audio</h1>
+    <p>Como colocar audio de duas formas</p>
+    <ol type="a">
+        <li>Da forma vagabunda que pode n funcionar</li>
+        <li>Forma usual que e mais trabalhosa porem funciona em 99% dos casos</li>
+    </ol>
+    <h2>Forma vagabunda</h2>
+    <p>Primeira forma, usando a tag audio e em <q>src</q> coloca o arquivo desejavel com os parametros <q>autoplay</q> e <q>controls</q> para funcionar</p>
+    <audio src="midia/hunu dixit.mp3" controls autoplay></audio>
+    <h2>Forma usual</h2>
+    <p>Segunda forma seria usar a tag <q>audio</q> apagar o parametro <q>scr</q> colocar os parametros <q>preloand="metadata"(o mais usual)</q>e <q>autoplay</q> e <q>controls</q>, alem de que devo colocar a tag <q>source:src</q> e no parametro <q>src</q> colocar o arquivo desejavel que nem na primeira forma depois no parametro <q>type</q> colocar <q>audio/ tipo do arquivo</q> e o site vai carregar de cima pra baixo se o navegador nao for compativel com o primeiro arquivo no primeiro source.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/hunu dixit.mp3" type="audio/mpeg">
+        <source src="midia/hunu dixit.ogg" type="audio/ogg">
+        <source src="midia/hunu dixit.awv" type="audio/awv"> <!--esse tipo de arquivo e muito pesado, n usar muito-->
+        <p>Infelismente seu navegador nao suporta audio <a href="midia/hunu dixit.mp3" download="musica do site" type="audio/mpeg">clique aqui para baixar o arquivo em .MP3</a>.</p>
+    </audio>
+    <a href="midia/hunu dixit.mp3">clique aqui para baixar</a>
+</body>
+</html>

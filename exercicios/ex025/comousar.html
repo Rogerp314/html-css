@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Icon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(90deg, dimgray, lightgray);
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+        main{
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            text-align: justify;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.48);
+            border-radius: 20px 0px;
+            /* Tem como configurar uma por uma mas eu acho muito desnecessario, pois seu eu colocar um so valor todos os lados tem o mesmo valor, mais se eu colocar dois valores vai ficar que nem esse exemplo, cima-esquerda e baixo-direta sao o primeiro valor e o segundo valor e cima-direita e baixo-esquerda*/
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0;
+        }
+        nav{
+            background-color: #888888;
+            padding: 3px;
+            box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.486);
+            /*Se eu quiser uma sombra de dentro e so colocar 'inset' antes das configuracoes e a quarta configuraçao sem ser a cor e o alcançe.*/
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 30px;
+            display: block;
+            color: blue;
+        }
+        nav > a:hover{
+            color: yellow;
+            text-decoration: underline;
+        }
+        nav > a:active{
+            color: red;
+        }
+        article{
+            background-color: lightgray;
+            text-align: justify;
+            padding: 2px;
+        }
+        article > aside{
+            background-color: #888888;
+            width: 278px;
+            border-radius: 2px;
+        }
+        article > aside:hover{
+            color: blueviolet;
+            cursor: pointer;
+            text-decoration: solid;
+        }
+        #penes{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin: 30px auto 30px auto;
+            padding: 10px;
+            border: 2px groove red;
+            border-radius: 50%; /*se colocar 50% ja vai*/
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.383);
+            line-height: 100px; /*Essa declaraçao serve para deixar o texto no centro do background*/
+            cursor: pointer;
+        }
+        #penes:hover{
+            color: red;
+            border-color: black;
+            box-shadow: 10px 10px 20px black;
+        }
+    </style>
+</head>
+<body>
+    <!--Todas as tags semanticas apresentadas a seguir sao div's, sendo "header" o cabeçalho, "main" o conteudo principal e o "footer" sendo o rodape da pagina/site.-->
+
+    <header><!--O cabeçalho serve para colocar o h1 e aprensentar o site em si-->
+        <h1>Meu Exemplo de Site</h1>
+        <nav><!--a tag nav serve para fazer menus-->
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main><!--O main serve para colocar o conteudo principal do site-->
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <h2>Noticias sobre a comprovaçao da Teoria da Relatividade</h2>
+            <article><!--tag usada para quado quero dizer que isso e um artigo-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae asperiores delectus odio quo ex omnis quibusdam iste facere dolorum, labore est animi officia porro consequuntur culpa amet temporibus nihil. Accusantium.</p>
+
+                <aside><!--A tag aside serve para identificar um assunto relativo ao artigo.-->
+                    <p>O autor desse artigo foi Albert Einstein.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><!--O footer serve para colocar aqueles links e colocar copy do site e bla bla bla-->
+        <p>
+            Desenvolvido por &copy;P.Roger
+        </p>
+    </footer>
+
+    <p id="penes">CU</p>
+
+
+
+    <!--Nao querendo falar nada mais a organizaçao de um site de forma semantica com tags semanticas e bem melhor que so taca um monte de div com id e fds.-->
+</body>
+</html>

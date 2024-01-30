@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+    font: normal 1em Arial, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+
+/*A propriedade que e responsavel pelo alinhamento esta nas CSS, sendo ela o "text-align", podendo ter tres tipos comuns, que sao o left, right e center, que sao bem obvios o que fazem, e o justify faz com que o texto fique alinhado dos dois lados.
+Temos tambem a propriedade responsavel pela indentaçao do paragrafo, tipo no começo de todos os paragrafos temos que dar um espaçamento do lado esquerdo, essa propriedade se chama "text-indent" e seu valor e de mais ou menos 20px ou 30px (recomendado).*/

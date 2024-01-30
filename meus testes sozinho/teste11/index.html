@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste fodastico</title>
+</head>
+<body>
+    <h1>Teste com imagens variaveis</h1>
+    <p>Varie o tamanho da janela do navegador para ver a mudança do tamanho da imagem, usando a tag picture e os paramentros source, media= max-width, scrset com a localidade do arquivo e type=<image>
+    <q>nome do tipo de arquivo.</q></p>
+    <p>Obs: Sempre colocar as tags source em ordem crescente de cima para baixo.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="fotos/walter-300.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="fotos/walter-700.png" type="image/png">
+        <img src="fotos/walter-1000.png" alt="Walter white flexivel">
+    </picture>
+    <p>Agora vou fazer um teste com uma imagem <strong>flexivel</strong> quadrada, ent <a href="fotos/img.html" target="_self" rel="next">clique aqui</a>.</p>
+</body>
+</html>

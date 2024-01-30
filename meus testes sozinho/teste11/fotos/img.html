@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste fodastico</title>
+</head>
+<body>
+    <h1>Teste de imagem flexivel, com uma imagem <mark style="background-color: blueviolet;">quadrada</mark>.</h1>
+    <picture>
+        <source media="(max-width:750px )" srcset="../imagens/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="../imagens/imagem-m.png" type="image/png">
+        <img src="../imagens/imagem-g.png" alt="Imagem de uma paisagem">
+    </picture>
+    <p>Obs: A imagem padrao vai ser a maior, sendo assim o parametro <q>media</q> indica que quando o navegador bater um determinado pixel ele vai mudar para a imagem que esta no parametro <q>srcset</q> e o parametro <q>type</q> indica o tiopo do arquivo <q>midea type</q>.</p>
+    <p>Para voltar <a href="../index.html" target="_self" rel="prev">clique aqui</a>.</p>
+    <p><a href="../audio.html" target="_self" rel="next">Clique aqui</a> para seguir</p>
+</body>
+</html>
