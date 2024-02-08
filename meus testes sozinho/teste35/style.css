@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#lista{
+    mask-image: linear-gradient(to bottom, black, transparent);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
+main p{
+    text-align: center;
+}
+#dados{
+    text-indent: 5px;
+}
+#botao{
+    padding: 3px;
+    border-radius: 2px;
+    border-color: lightgray;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#botao:active{
+    background-color: white;
+    color: black;
+}
+#cal{
+    background-color: purple;
+    cursor: pointer;
+}
