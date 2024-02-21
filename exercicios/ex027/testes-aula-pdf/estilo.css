@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../imagens/wallpaper003.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*Deixei por padrão o 'auto' pois se eu modificar essas imagens vai ficar horrivel*/
+}
+.caixa{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+}
+#c1{
+    background-color: lightblue;
+    font: normal bold 1em Arial, Helvetica, sans-serif;
+}
+#c2{
+    background-image: linear-gradient(to bottom, orange, lightgray);
+    font: italic bold 1em Times, serif;
+}
+#c3{
+    background-image: url('../imagens/pattern004.png');
+    font: normal bold 1em Verdana, sans-serif;
+}
