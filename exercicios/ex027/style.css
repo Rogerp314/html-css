@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*Teste de background no corpo do documento*/
+    background-image: url('imagens/wallpaper002.jpg');
+}
+.quadrado{
+    display: inline-block;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#q1{
+    /*Forma de colocar o background como uma cor sólida (chapada), forma mais básica.*/
+    background-color: skyblue;
+}
+#q2{
+    /*Forma de colocar o background com um degrade muito pica, sendo assim uma forma muito prática de fazer um charme além de ser algo de conhecimento mediano*/
+    background-image: linear-gradient(to bottom, yellow, red);
+}
+#q3{
+    /*Forma de colocar o background com uma imagem no lugar de qualquer cor chapada ou degrade, ou seja, uma forma muito pica de fazer um disgn foda de forma simples.*/
+    background-image: url('imagens/pattern001.png');
+}
