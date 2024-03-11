@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamanho das Imagens no bakground</title>
+    <title>Tamanho das Imagens no bakground e fundo fixo na tela</title>
+    <!--Esse exercíco serve para ensinar como mudar o tamanho da imagem no background e como deixar ele 'vinculado' no fundo da view port, ou seja, deixar a imagem fixa em relação ao conteudo.-->
     <style>
         body{
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position:  left top;
             background-size: cover;
+            background-attachment: fixed;
+            /*
             /*
             Obs: 
             -auto; o que vem de padrão
             -contain; Faz com que a imagem seja exipida de forma sem cortes e tudo mais
             -cover; Copre todo o background por tras da imagem e n faz a imagem ser alterada.
             Se o conteúdo for muito grande ai a imagem acaba e fica com o background do fundo do site, sendo assim temos outras soluções para isto.
+            Obs ll: Agora eu vou escrever sobre o attachiment, ou seja, uma declaração que deixar escolher deixar o background fixo ou scrolar junto com o conteúdo.
+            Valores: 
+            -scroll; padrão
             */
+            /*
+            Shorthand - Background (ordem)
+            color > image > position > repeat  > [size] > attachment
+            Desta forma está no papel, ou seja, é regra porem ninguem aplica ainda, ent devemos usar o size fora do shorthand.
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         header{
             color: white;
@@ -38,6 +52,15 @@
         <h1>Tamanho do background em caixas</h1>
     </header>
     <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem debitis voluptates praesentium iusto rerum temporibus aliquid ab qui laudantium minima. Quam sit ab quis harum eveniet id tenetur dolorem blanditiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus id corrupti corporis enim excepturi laudantium ex totam sequi itaque odio? Molestias atque, provident sequi corrupti accusantium facilis iure beatae deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid perferendis non aut incidunt eveniet voluptatem id. Nesciunt libero placeat minus earum, voluptas molestiae ut veniam illum facere quas. Debitis, repudiandae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem debitis voluptates praesentium iusto rerum temporibus aliquid ab qui laudantium minima. Quam sit ab quis harum eveniet id tenetur dolorem blanditiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus id corrupti corporis enim excepturi laudantium ex totam sequi itaque odio? Molestias atque, provident sequi corrupti accusantium facilis iure beatae deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid perferendis non aut incidunt eveniet voluptatem id. Nesciunt libero placeat minus earum, voluptas molestiae ut veniam illum facere quas. Debitis, repudiandae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem debitis voluptates praesentium iusto rerum temporibus aliquid ab qui laudantium minima. Quam sit ab quis harum eveniet id tenetur dolorem blanditiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus id corrupti corporis enim excepturi laudantium ex totam sequi itaque odio? Molestias atque, provident sequi corrupti accusantium facilis iure beatae deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid perferendis non aut incidunt eveniet voluptatem id. Nesciunt libero placeat minus earum, voluptas molestiae ut veniam illum facere quas. Debitis, repudiandae.
+        </p>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem debitis voluptates praesentium iusto rerum temporibus aliquid ab qui laudantium minima. Quam sit ab quis harum eveniet id tenetur dolorem blanditiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus id corrupti corporis enim excepturi laudantium ex totam sequi itaque odio? Molestias atque, provident sequi corrupti accusantium facilis iure beatae deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid perferendis non aut incidunt eveniet voluptatem id. Nesciunt libero placeat minus earum, voluptas molestiae ut veniam illum facere quas. Debitis, repudiandae.
         </p>

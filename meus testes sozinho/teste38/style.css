@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'burzum';
+    src: url('fonte/GregorianFLF.ttf');
+}
+:root{
+    --font-burzum: 'burzum';
+}
+
+body{
+    height: 100vh;
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+    background-color: black;
+    background-image: url('imagens/ambient.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    font: normal bold 1.5em var(--font-burzum);
+    text-align: center;
+}
+main{
+    max-width: 700px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 15px;
+    border: 2px solid red;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: justify;
+    text-indent: 17px;
+}
+#video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    font: italic bold 1em Times, serif;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: red;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
