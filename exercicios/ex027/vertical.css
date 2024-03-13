@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+header{
+    font: normal normal 1.2em Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*Por regra quem está por fora tem o position com valor relative e quem está dentro tem o valor da declaração position como absolute.*/
+#containder{
+    /*Está é a forma que eu conheço a mais tempo e que é mais avançada e que tbm é mais prática!
+    Não se muito ao certo pq ele não falou direto dessa forma mais tudo bem*/
+    display: flex;
+    align-items: center;
+    justify-content: center; /*Por padrão toda caixa em HTML tem o position com valor relative.*/
+    height: 500px;
+    background-color: purple;
+    background-image: url('imagens/target001.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+}
+#conteudo{
+    /*A partir disso eu posso mudar os valores de left, right, top, bottom etc
+    sendo que outra forma mais facil de se fazer isso.*/
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+    background-image: url('imagens/target001.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+}
