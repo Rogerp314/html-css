@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'passionbold';
+    src: url('fontes/PassionOne-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+:root{
+    --font-titulo: 'passionbold';
+    --font-texto: 'sriracha';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header  h1{
+    padding-top: 50px;
+    /*Temos duas tecnicas para fazer o título ficar todo em maiusculo, porem se todas as letras ficarem maiusculas de forma q todas estejam com o mesmo tamanho parece muito que o título está gritando: 
+    Usando a declaração : 
+    text-transform: uppercase;
+    Todas as letras ficam em maiusculo porem de forma gritante, sendo assim temos a outra técnica que permite todas as letras estarem maiuscula mas com somente as primeiras letras estejam com um tamanho maior que o resto, dando a impressão que o título não está gritando: 
+    font-variant: small-caps;
+    Essa declaração é a melhor nesses casos.
+    */
+    font-variant: small-caps;
+}
+header p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh; /*Isso serve para aumentar o espaço de rolagem
+                            Como vh é o tamanho percentual do tamanho da tela de visão do site o tamanho do conteudo se adapta.*/
+    line-height: 2em;/*Serve para dar um espaçamento para o leitor*/
+    padding-left: 30px;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: rgb(86, 86, 86);
+    color: white;
+}
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.715);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
