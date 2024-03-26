@@ -8,6 +8,7 @@
     src: url('fontes/Sriracha-Regular.ttf') format('truetype');
 }
 :root{
+    --font-padrao: 'Verdana, Geneva, Tahoma, sans-serif';
     --font-titulo: 'passionbold';
     --font-texto: 'sriracha';
 }
@@ -19,6 +20,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font-padrao);
 }
 
 header{
@@ -36,6 +38,8 @@ header  h1{
     Essa declaração é a melhor nesses casos.
     */
     font-variant: small-caps;
+    font-family: var(--font-titulo);
+    font-size: 4em;
 }
 header p{
     padding-bottom: 50px;
@@ -55,6 +59,8 @@ section{
                             Como vh é o tamanho percentual do tamanho da tela de visão do site o tamanho do conteudo se adapta.*/
     line-height: 2em;/*Serve para dar um espaçamento para o leitor*/
     padding-left: 30px;
+    font-family: var(--font-texto);
+    font-size: 2em;
 }
 .normal{
     background-color: white;
@@ -63,10 +69,13 @@ section{
 .imagem{
     background-color: rgb(86, 86, 86);
     color: white;
+
+    /*Tirei o width daqui pois o display inline-block é melhor pois é um dito de caixa que se comporta como block mas se adapta ao conteudo.*/
 }
 .imagem p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.715);
-    width: 400px;
 }
 
 footer{
@@ -74,4 +83,14 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 510px){
+    header h1{
+        font-size: 2em;
+    }
+    section{
+        font-size: 1em;
+    }
+    /*Eu particularmente prefiro esse jeito pois é muito mais simples de achar um tamanho ideal para o usuário web sem muita dor de cabeça para o programador de websites.*/
 }
