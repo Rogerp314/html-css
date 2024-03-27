@@ -62,13 +62,19 @@ section{
     font-family: var(--font-texto);
     font-size: 2em;
 }
+section p{
+    padding-bottom: 2em;
+}
 .normal{
     background-color: white;
     color: black;
 }
 .imagem{
     background-color: rgb(86, 86, 86);
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.331);
 
     /*Tirei o width daqui pois o display inline-block é melhor pois é um dito de caixa que se comporta como block mas se adapta ao conteudo.*/
 }
@@ -76,6 +82,16 @@ section{
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.715);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.34);
+}
+#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+#img02{
+    background-image: url('imagens/background002.jpg');
+    background-repeat: no-repeat;
 }
 
 footer{
@@ -94,3 +110,9 @@ footer{
     }
     /*Eu particularmente prefiro esse jeito pois é muito mais simples de achar um tamanho ideal para o usuário web sem muita dor de cabeça para o programador de websites.*/
 }
+
+
+/*
+    Para colocar mais de uma imagem no site com efeito paralax, alem de colocar uma class para fazer esse efeito, devemos colocar um id para diferenciar as imagens.
+    Depois disso é só aplicar os conhecimentos adiquiridos no capítulo de imagens de fundo.
+*/
