@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+:root{
+    --fonte-de-destaque: 'Bebas';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightgray;
+}
+header{
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.247);
+    height: 450px;
+    background-color: lightblue;
+    background-image: url('../imagens/imagem01.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header h1{
+    font: normal normal 4em var(--fonte-de-destaque);
+    font-variant: small-caps;
+}
+header p{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+#caixa{
+    background-color: rgba(0, 0, 0, 0.297);
+    padding: 15px;
+}
