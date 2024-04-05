@@ -7,7 +7,7 @@ function entrar(){
     amarelo.style.color='yellow'
 }
 function sair(){
-    azul.style.color='black'
-    verde.style.color='black'
-    amarelo.style.color='black'
+    azul.style.color='white'
+    verde.style.color='white'
+    amarelo.style.color='white'
 }
