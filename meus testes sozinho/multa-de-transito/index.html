@@ -30,9 +30,12 @@
 <p><div class="intenso">Rumba do Sinal Vermelho:</div> Flagrados passando no sinal vermelho, os motoristas sentem frustração e constrangimento. Alguns debatem com os policiais, enquanto outros aceitam a multa em silêncio, com o rosto corado.</p>
 
 <p><div class="intenso">Tango do Estacionamento Irregular:</div> Carros estacionados ilegalmente pontilham a paisagem, desafiando os fiscais de estacionamento. Os motoristas fazem apelos, esperando por clemência, ou executam movimentos rápidos para evitar multas quando veem o uniforme se aproximando.</p>
-
-<img src="imagens/multa.jpg" alt="Polícia Rodoviária" id="imagem">
-
+<div id="multa">
+    <picture>
+        <source media="(max-width: 510px)" srcset="imagens/multa-1.jpg" type="image/jpg">
+        <img src="imagens/multa.jpg" alt="Polícia Rodoviária" id="imagem">
+    </picture>
+</div>
 <p><div class="intenso">Salsa do Cinto de Segurança:</div> Alguns só colocam o cinto quando veem viaturas policiais por perto, enquanto outros ignoram completamente as leis de segurança. O clique do cinto se torna um reflexo ao avistar as luzes piscando.</p>
 
 <p>
@@ -43,6 +46,11 @@
     <div class="intenso">Dois Passos da Sobriedade:</div> Motoristas que beberam agem com cautela nos pontos de verificação de embriaguez. Alguns fingem sobriedade, enquanto outros recusam o teste do bafômetro, com passos vacilantes.
     Valsa da Colagem no Trânsito: Motoristas agressivos colam nos carros à frente para intimidar. Quando parados, negam ou culpam o veículo da frente, seus parceiros nessa valsa arriscada.
 </p>
+<div id="multa">
+    <picture>
+        <img src="imagens/brmultas.png" alt="Policial multando carro">
+    </picture>
+</div>
 <p>
     <div class="intenso">Foxtrot dos Documentos Vencidos:</div> Licenças, registros e seguros expirados assombram os motoristas. Pego nessa dança burocrática, alegam desconhecimento ou prometem renovação imediata.
     Jive do Acidente e Fuga: Alguns fogem após um acidente, na esperança de evitar consequências legais. Outros permanecem, enfrentando as músicas e trocando informações de seguro.
@@ -58,13 +66,27 @@
                 <p>Nessa coreografia intricada, os motoristas equilibram o desejo de evitar penalidades com a necessidade de seguir as regras da estrada. Os agentes da lei desempenham seu papel, garantindo que a dança continue—um ciclo perpétuo de cautela, evasão e graça ocasional.</p>
             </aside>
             <div id="papel"></div>
+            <aside>
+                <p>
+                    Para saber mais sobre como é cobrado as multas de trânsito no Brasil, segue aqui um simulador:
+                </p>
+            </aside>
             <div>
-                <a href="#" target="_self" rel="next"><button>Simulador de Multas</button></a>
+                <a href="#" target="_self" rel="next"><button id="botao">Simulador de Multas</button></a>
             </div>
         </div>
     </div>
+    <div id="sp">
+        
+    </div>
     <footer>
-        <p>Site feito por <a href="https://github.com/Rogerp314" target="_blank" rel="external">Pedro Rogério</a></p>
+        <div id="spp"><img src="imagens/logo-rodape-governo-do-estado-sp.png" alt="Estado de São Paulo"></div>
+        <div id="creditos">
+            <p>Site feito por <a href="https://github.com/Rogerp314" target="_blank" rel="external">Pedro Rogério <br>
+                Imgens com direitos autorais, esse site foi feito com o intuito de treino e estudo. <br>
+                Desing baseado no site do .gov. <br>
+            </a>
+        </div>
     </footer>
 
     <script src="programaçao/script.js"></script>

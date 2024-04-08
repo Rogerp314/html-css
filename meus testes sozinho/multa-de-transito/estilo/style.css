@@ -85,6 +85,12 @@ aside h3{
 aside p{
     max-width: 800px;
     font: normal normal 1.3em Times, serif;
+    text-indent: 5px;
+}
+#multa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #papel{
     background-image: url('../imagens/imagem02.jpg');
@@ -92,14 +98,54 @@ aside p{
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
-    max-width: 1500px;
+    max-width: 100%;
     box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.24);
 }
-
-
-footer{
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    font-weight: bolder;
+}
+#botao{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    background-color: blue;
+    color: white;
+    font: normal normal 1.2em Times, serif;
+    border: 0px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+#botao:active{
+    box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.26);
+    background-color: green;
+    color: yellow;
+}
+#sp{
     background-color: white;
+    padding-top: 170px;
+}
+#spp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+footer > p{
     padding-top: 50px;
+    text-align: justify;
+}
+#creditos{
+    display: contents;
+    margin: auto;
 }
 
 
