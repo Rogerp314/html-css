@@ -7,6 +7,8 @@
 
 :root{
     --fonte-de-destaque: 'Bebas';
+
+    --cor-dos-botoes: blue;
 }
 
 *{
@@ -57,7 +59,7 @@ article > h2{
     font-variant: small-caps;
 }
 article p{
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .intenso{
     font-weight: bolder;
@@ -113,12 +115,15 @@ a:hover{
     width: 300px;
     height: 40px;
     margin: auto;
-    background-color: blue;
+    background-color: var(--cor-dos-botoes);
     color: white;
     font: normal normal 1.2em Times, serif;
     border: 0px;
     border-radius: 14px;
     cursor: pointer;
+}
+#botao:hover{
+    background-color: rgb(97, 97, 254);
 }
 #botao:active{
     box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.26);

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+:root{
+    --fonte-de-destaque: 'Bebas';
+
+    --cor-dos-botoes: blue;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightgray;
+}
