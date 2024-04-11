@@ -31,12 +31,10 @@
                 </ul>
             </p>
             <p>Para saber se você será multado segue os campos de preenchimento:</p>
-            <p>Nome:</p>
-            <input type="text" name="nome" id="nome"> <br>
-            <input type="radio" name="sexo" id="sexo" checked>Homem <input type="radio" name="sexo" id="sexo">Mulher<br>
-            <p>Velocidade:</p>
-            <input type="number" name="velocidade" id="velocidade"> <br>
-            <button id="resultado" on>Começar</button>
+            <input type="text" name="nome" id="nome" placeholder="Nome" onkeypress="chave(event)"> <br>
+            <input type="radio" name="sexo" id="sexo" checked>Homem <input type="radio" name="sexo">Mulher<br>
+            <input type="number" name="velocidade" id="velocidade" placeholder="Velocidade" onkeypress="chave(event)"> <br>
+            <button id="resultado" onclick="resultado()">Começar</button>
             <p>Resultado:</p>
             <p id="resposta"></p>
         </article>
