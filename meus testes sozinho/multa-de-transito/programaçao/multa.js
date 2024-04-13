@@ -12,14 +12,13 @@ function chave(event){
 }
 
 function resultado(){
-    if(nome.value.lenght==0){
+    if(sex[0].checked){
+    if(nome.value.lenght==0 || velocidade.value.lenght==0){
         res.innerHTML='[ERROR] Preencha os dados corretamente para assim fazer a simulação.'
         res.style.color='red'
         nome.focus()
         velocidade.value=''
-    } else{
-    if(sex[0].checked){
-    if(velocidade.value<=100){
+    } else if(velocidade.value>=0){
         res.innerHTML=`O senhor <strong>${nome.value}</strong> está dentro do limite de velocidade então não precisará pagar multa.`
     } else if(velocidade.value<=120){
         res.innerHTML=`O senhor <strong>${nome.value}</strong> por desobedecer a lei tera de pagar <strong>R$${multas.fraca}</strong> por ter passado do limite da pista. <br> Passou há <strong>${velocidade.value}km/h</strong>.`
@@ -38,4 +37,4 @@ function resultado(){
     } else{
         res.innerHTML=`A senhora <strong>${nome.value}</strong> por desobedecer a lei terá de pagar <strong>R$${multas.forte}</strong> por ter passado do limite da pista. <br> Passou há <strong>${velocidade.value}km/h</strong>.`
     }
-}}}
+}}
