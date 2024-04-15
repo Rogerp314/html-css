@@ -34,8 +34,19 @@ function resultado(){
                 res.innerHTML=`O senhor <strong>${nome.value}</strong> ultrapassou o limite de velocidade da pista. <br> O senhor estava a <strong>${velocidade.value}km/h</strong> levara uma multa de <strong>R$${multas.fraca}</strong>.`
             } else if(velocidade.value<=150){
                 res.innerHTML=`O senhor <strong>${nome.value}</strong> ultrapassou o limite de velocidade da pista. <br> O senhor estava a <strong>${velocidade.value}km/h</strong> levara uma multa de <strong>R$${multas.media}</strong> e <strong>5 pontos na carteira</strong>.`
-            } else if(velocidade.value>150){
+            } else{
                 res.innerHTML=`O senhor <strong>${nome.value}</strong> ultrapassou o limite de velocidade da pista. <br> O senhor estava a <strong>${velocidade.value}km/h</strong> levara uma multa de <strong>R$${multas.forte}</strong> e <strong>o carro será aprendido</strong>.`
+            }
+        } else if(sex[1].checked){
+            
+            if(velocidade.value<=100){
+                res.innerHTML=`A senhora <strong>${nome.value}</strong> não levou multa pois respeitou o limite de velocidade da pista.`
+            } else if(velocidade.value<=120){
+                res.innerHTML=`A senhora <strong>${nome.value}</strong> ultrapassou o limite de velocidade da pista. <br> A senhora estava a <strong>${velocidade.value}km/h</strong> levara uma multa de <strong>R$${multas.fraca}</strong>.`
+            } else if(velocidade.value<=150){
+                res.innerHTML=`A senhora <strong>${nome.value}</strong> ultrapassou o limite de velocidade da pista. <br> A senhora estava a <strong>${velocidade.value}km/h</strong> levara uma multa de <strong>R$${multas.media}</strong> e <strong>5 pontos na carteira</strong>.`
+            } else{
+                res.innerHTML=`A senhora <strong>${nome.value}</strong> ultrapassou o limite de velocidade da pista. <br> A senhora estava a <strong>${velocidade.value}km/h</strong> levara uma multa de <strong>R$${multas.forte}</strong> e <strong>o carro será aprendido</strong>.`
             }
         }
     }
