@@ -18,3 +18,28 @@
 body{
     background-color: lightgray;
 }
+header{
+    margin: 40px;
+}
+h1{
+    text-align: center;
+    font-family: var(--fonte-de-destaque), sans-serif;
+    font-size: 4em;
+    font-variant: small-caps;
+}
+header>p{
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal 1.5em var(--fonte-de-destaque), sans-serif;
+}
+header>nav{
+    text-align: center;
+}
+nav>a{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font: normal bolder 1.3em Arial, Helvetica, sans-serif;
+    margin: 50px;
+    padding: 10px;
+}
