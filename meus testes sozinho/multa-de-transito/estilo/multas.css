@@ -17,6 +17,11 @@
 }
 body{
     background-color: lightgray;
+    background-image: url('../imagens/imagem02.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 header{
     margin: 40px;
@@ -35,11 +40,39 @@ header>p{
 header>nav{
     text-align: center;
 }
-nav>a{
-    background-color: blue;
+#menu{
+    margin: 25px;
+}
+#menu>a{
+    background-color: black;
     color: white;
     text-decoration: none;
     font: normal bolder 1.3em Arial, Helvetica, sans-serif;
-    margin: 50px;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#menu>a:hover{
+    box-shadow: 1px 2px 4px #0000006c;
+}
+#menu>a:active{
+    box-shadow: inset 1px 2px 4px #0000006c;
+}
+main{
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.283);
+}
+article>h2{
+    text-align: center;
+    font: normal bold 2em var(--fonte-de-destaque), sans-serif;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.265);
+}
+article>p{
     padding: 10px;
 }
