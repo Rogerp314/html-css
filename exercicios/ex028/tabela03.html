@@ -29,6 +29,13 @@
             margin: auto;
             border-collapse: collapse;
         }
+        caption{
+            background: gray;
+            color: white;
+            border: 1px solid black;
+            font: normal bold 1.5em Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -40,6 +47,9 @@
         .num{
             text-align: right;
         }
+        #populacao{
+            width: 50px;
+        }
     </style>
 </head>
 <body>
@@ -49,9 +59,10 @@
     </header>
     <!--
         ANATOMIA PARA TABELAS GRANDES:
-        (É como a anatomia do body do site em si)
+        (É como a anatomia do body do site em si) Obs: Só se coloca o texto em si.
         temos ent:
         TABLE
+            CAPTION (LEGENDA/TÍTULO)
             THEADE
                 TH, TR, TD
             TBODY
@@ -60,15 +71,23 @@
                 TH, TR, TD
         Obs: Não é necessario a tabela ter head e footer pois somente o body já basta.
         Obs: Todo th por padrão já vem em negrito e centralizado no meio.
+        AVISO IMPORTANTE SOBRE O ESCOPO DO th E td:
+        O th só é usado quando há título para a coluna , ou seja, o th não é um dado e sim uma 'legenda' sobre o que é o dado, de certa forma o th é o título de cada tipo de dado existente na tabela.
+        Outra coisa;
+        O scope de cada th depende a onde estaram os dados existente da categoria, ou seja, a onde estão os dados do título,
+        Para sinalizar isto para o html, devemos ultilizar a propriedade 'scope="col"' para dados em forma de coluna em relação ao th e para dados que formam linhas em relação ao título se usa 'scope="row"'.
+        O scope não causa nenhuma alteração visual, mas é importante colocar ela nas linhas de códigos pois assim facilita para o buscador dos navegadores analizem o código do site e faça com que ele apareça mas rapidamente no topo dos resultados de pesquisas.
+        Obs: Posso tbm alterar a largura e altura das células de cada coluna de cada tabela existente, com id ou pontualmente.
     -->
     <main>
         <p>Obs: A tabela a seguir é um exemplo e segue o modelo da tabela da wikipédia <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" rel="next">desta página</a> em específico. A minha terá footer.</p>
 
         <table>
+            <caption>População das Unidades Federativas do Brasil</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" id="populacao">População</th>
                 </tr>
             </thead>
 
@@ -87,104 +106,104 @@
                 </tr>
                 <tr>
                     <td>Bahia</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Paraná</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Rio Grande do Sul</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Pernambuco</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Ceará</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Pará</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Santa Catarina</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Goiás</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Maranhão</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Paraiba</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Amazonia</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Espírito Santo</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Mato Grosso</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Rio Grande do Norte</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Piauí</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Alagoas</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Distrito Federal</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Mato Grosso do Sul</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Sergipe</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Rondônia</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Tocantins</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Acre</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Amapá</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
                 <tr>
                     <td>Roraima</td>
-                    <td class="num"></td>
+                    <td class="num">50 000 000</td>
                 </tr>
             </tbody>
 
             <tfoot>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>81.004.480</strong></td>
             </tfoot>
         </table>
