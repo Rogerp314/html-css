@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon-tabelas.svg" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font: normal normal 1em Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-style: italic;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            width: 400px;
+        }
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightgray;
+            font: italic bold 1.5em Times, serif;
+        }
+        #cu{
+            width: 400px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Todos os meus conhecimentos adiquiridos sobre tabelas até agora <strong>(29/04/2024)</strong></h1>
+        <p>O exemplo de tabela será pego da <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" rel="external">wikipédia</a>.</p>
+    </header>
+    <main>
+        <table>
+            <caption>Estados brasileiros</caption>
+            <thead id="cu">
+                <tr>
+                    <th scope="col">Estados separados por região</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Sudeste</th>
+                    <td>Sp</td>
+                    <td>Mg</td>
+                    <td>Rj</td>
+                </tr>
+                <tr>
+                    <th scope="row">Norte</th>
+                    <td>Cu</td>
+                    <td>Pinto</td>
+                    <td>Bosta</td>
+                </tr>
+                <tr>
+                    <th scope="row">Centro-oeste</th>
+                    <td>Mijo</td>
+                    <td>Rs</td>
+                    <td>Mt</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sul</th>
+                    <td>Pe</td>
+                    <td>Ba</td>
+                    <td>Bct</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nordeste</th>
+                    <td>Sc</td>
+                    <td>Df</td>
+                    <td>Penes</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

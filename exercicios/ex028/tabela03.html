@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon-tabelas.svg" type="image/x-icon">
     <title>Tabelas Grandes</title>
     <style>
         body{
@@ -39,6 +40,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        tbody > tr:nth-child(2n){ /*Essa pseudoclasse significa que a cada duas linhas (2n) a propriedade que tem a pseudoclasse vai ter as propriedades dentro do bloco.
+            Se quiser da pra colocar só as linhas 'impáres' com essas proriedades, sendo assim, impar em ingles é 'odd' (2n-1), e tbm em par que é 'even' (2n)*/
+            background-color: lightgray;
+            font-weight: bold;
         }
         th,td{
             border: 1px solid black;
@@ -83,7 +89,7 @@
         <p>Obs: A tabela a seguir é um exemplo e segue o modelo da tabela da wikipédia <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" rel="next">desta página</a> em específico. A minha terá footer.</p>
 
         <table>
-            <caption>População das Unidades Federativas do Brasil</caption>
+            <caption>População das Unidades Federativas do Brasil</caption> <!--O 'capition' especifica o título ou legenda da tabela.-->
             <thead>
                 <tr>
                     <th scope="col">Estado</th>
