@@ -13,8 +13,11 @@
             text-align: center;
             text-decoration: underline;
         }
-        main>p{
+        #obs{
             text-align: center;
+        }
+        p{
+            text-indent: 10px;
         }
         a{
             color: black;
@@ -26,9 +29,9 @@
         }
         table{
             width: 400px;
-            text-align: center;
             margin: auto;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             background: gray;
@@ -40,6 +43,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         tbody > tr:nth-child(2n){ /*Essa pseudoclasse significa que a cada duas linhas (2n) a propriedade que tem a pseudoclasse vai ter as propriedades dentro do bloco.
             Se quiser da pra colocar só as linhas 'impáres' com essas proriedades, sendo assim, impar em ingles é 'odd' (2n-1), e tbm em par que é 'even' (2n)*/
@@ -55,6 +63,9 @@
         }
         #populacao{
             width: 50px;
+        }
+        p{
+
         }
     </style>
 </head>
@@ -84,9 +95,17 @@
         Para sinalizar isto para o html, devemos ultilizar a propriedade 'scope="col"' para dados em forma de coluna em relação ao th e para dados que formam linhas em relação ao título se usa 'scope="row"'.
         O scope não causa nenhuma alteração visual, mas é importante colocar ela nas linhas de códigos pois assim facilita para o buscador dos navegadores analizem o código do site e faça com que ele apareça mas rapidamente no topo dos resultados de pesquisas.
         Obs: Posso tbm alterar a largura e altura das células de cada coluna de cada tabela existente, com id ou pontualmente.
+
+        Deixando o cabeçalho fixo:
+        Esse recurso serve para quando o usuário for decendo a tela ele não se perca no meio e tenha que voltar para o começo só para saber de onde se pertence o dado.
+        Para isto devemos colocar a propriedade 'position: relative' na table, e na seguinte linhagem sendo ela 'thead>tr>th' tera as propriedades:
+        'position: sticky' que serve para dizer que o th do tr do thead será colocado em algum lugar sendo assim ele será fixado, e o 'top:-1px' para dizer que o th do tr do thead será colocado no pizel -1 da tela do navegador.
+        Obs: Só o conteudo será 'colocado' ent por isto devemos colocar tbm o background-color.
+        Outra coisa, o texto 'colado' ele vai 'embora' junto com a tabela (neste caso) como feito com os textos lorem.
+        Esse recurso não está correto para todos os navegadores.
     -->
     <main>
-        <p>Obs: A tabela a seguir é um exemplo e segue o modelo da tabela da wikipédia <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" rel="next">desta página</a> em específico. A minha terá footer.</p>
+        <p id="obs">Obs: A tabela a seguir é um exemplo e segue o modelo da tabela da wikipédia <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" rel="next">desta página</a> em específico. A minha terá footer.</p>
 
         <table>
             <caption>População das Unidades Federativas do Brasil</caption> <!--O 'capition' especifica o título ou legenda da tabela.-->
@@ -213,6 +232,20 @@
                 <td class="num"><strong>81.004.480</strong></td>
             </tfoot>
         </table>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p>]<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p>]<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore quas molestias? Possimus aut reiciendis quidem ad quo tempora nam quas! Maxime corrupti amet natus rem harum velit voluptatem ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum nostrum aperiam delectus magnam optio iure impedit illo deserunt expedita doloremque non ipsum dolore quidem perspiciatis, amet, quasi magni enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus cupiditate laboriosam illo voluptatem quo natus id, eligendi, consequatur corrupti esse fugiat in atque similique suscipit repudiandae. Minima, autem? Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, rerum quae? Quo dolore atque enim esse maiores obcaecati minus voluptas, officiis maxime ea, harum sit veniam fuga distinctio? Ipsa, id?
+        </p>
     </main>
 </body>
 </html>

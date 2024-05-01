@@ -25,6 +25,7 @@
             margin: auto;
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
         caption{
             border: 1px solid black;
@@ -32,8 +33,14 @@
             background-color: lightgray;
             font: italic bold 1.5em Times, serif;
         }
-        #cu{
-            width: 400px;
+        thead{
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
         }
         th,td{
             border: 1px solid black;
@@ -41,6 +48,18 @@
         }
         tbody > tr:nth-child(2n){
             background-color: lightgray;
+        }
+        tfoot{
+            background-color: lightgray;
+        }
+        #total{
+            height: 30px;
+        }
+        #num{
+            text-align: right;
+        }
+        footer{
+            text-align: center;
         }
     </style>
 </head>
@@ -51,10 +70,13 @@
     </header>
     <main>
         <table>
-            <caption>Estados brasileiros</caption>
+            <caption>Estados brasileiros separados por região</caption> <!--Título da tabela-->
             <thead id="cu">
                 <tr>
-                    <th scope="col">Estados separados por região</th>
+                    <th scope="col">Regiões Brasileiras</th>
+                    <th scope="col">Estados Ricos</th>
+                    <th scope="col">Estados Médios</th>
+                    <th scope="col">Estados Pobres</th>
                 </tr>
             </thead>
             <tbody>
@@ -89,7 +111,37 @@
                     <td>Penes</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr id="total">
+                    <th scope="row">Total de Estados:</th>
+                    <td id="num">5</td>
+                    <td id="num">5</td>
+                    <td id="num">5</td>
+                </tr>
+            </tfoot>
         </table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti, distinctio, eligendi odit amet velit ratione quae aliquid id repudiandae magnam. Ipsa nam cupiditate corrupti suscipit obcaecati tempora dignissimos quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime a provident, debitis tempore excepturi id aliquid dolore enim quo blanditiis dolorum quidem ab at quia consectetur non nobis nam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis labore, ullam beatae vero laboriosam excepturi magni, iusto amet molestiae voluptatem itaque quidem nam aliquam odit deleniti a in maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae libero et ad corrupti. Odit sint et voluptatem vitae distinctio dicta, quae, illo pariatur cupiditate corrupti unde labore, architecto omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse assumenda voluptatibus dolores quos, similique cum debitis quasi molestiae accusamus consectetur exercitationem voluptates. Necessitatibus a sed veritatis laudantium nemo minus?</p>
     </main>
+    <footer>
+        <p>Testes feito por <a href="https://github.com/Rogerp314" target="_blank" rel="external">Pedro Rogério</a>.</p>
+    </footer>
 </body>
 </html>
