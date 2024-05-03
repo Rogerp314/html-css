@@ -21,3 +21,15 @@ Jive do Acidente e Fuga: Alguns fogem após um acidente, na esperança de evitar
 
 Tango da Abordagem Policial: Os motoristas vivenciam uma mistura de emoções durante as abordagens: ansiedade, frustração ou até desafio. Alguns cooperam plenamente, enquanto outros questionam a autoridade do policial.
  Nessa coreografia intricada, os motoristas equilibram o desejo de evitar penalidades com a necessidade de seguir as regras da estrada. Os agentes da lei desempenham seu papel, garantindo que a dança continue—um ciclo perpétuo de cautela, evasão e graça ocasional.
+
+
+
+
+
+Aqui segue os valores das multas de acordo com o limite de <strong>100km/h</strong>:
+
+ Até 20% acima do limite permitido: <strong>R$ 130,16.</strong>
+
+ De 20% até 50% acima do limite permitido: <strong>R$ 195,23.</strong>
+
+ Acima de 50% do limite permitido: <strong>R$ 880,41</strong>

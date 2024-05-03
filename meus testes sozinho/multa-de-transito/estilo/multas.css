@@ -44,7 +44,7 @@ header>nav{
     margin: 25px;
 }
 #menu>a{
-    background-color: black;
+    background-color: blue;
     color: white;
     text-decoration: none;
     font: normal bolder 1.3em Arial, Helvetica, sans-serif;
@@ -58,6 +58,31 @@ header>nav{
 }
 #menu>a:active{
     box-shadow: inset 1px 2px 4px #0000006c;
+}
+table{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-collapse: collapse;
+}
+caption{
+    background-color: green;
+    padding: 10px;
+    border: 1px solid black;
+    font-family: var(--fonte-de-destaque);
+    font-size: 1.75em;
+    font-variant: small-caps;
+}
+th,td{
+    border: 1px solid black;
+    padding: 7px;
+}
+th{
+    text-align: left;
+}
+td{
+    font-weight: bold;
+    text-align: right;
 }
 main{
     background-color: white;

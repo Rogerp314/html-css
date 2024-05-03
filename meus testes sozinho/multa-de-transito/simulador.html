@@ -14,7 +14,7 @@
         <nav>
                     <div id="menu">
                         <a href="index.html" target="_self" rel="next">Home</a>
-                        <a href="#" target="_self" rel="next">Contato</a>
+                        <a href="https://github.com/Rogerp314" target="_blank" rel="external">Contato</a>
                     </div>
         </nav>
     </header>
@@ -22,14 +22,21 @@
         <article>
             <h2>Segue aqui os parametros usados para calcular as multas:</h2>
             <p>No Brasil a taxa de multa é de acordo com a porcentagem que o motorista passa do limite, sendo assim podemos exemplificar:</p>
-            <p>
-                Aqui segue os valores das multas de acordo com o limite de <strong>100km/h</strong>:
-                <ul>
-                    <li>Até 20% acima do limite permitido: <strong>R$ 130,16.</strong></li>
-                    <li>De 20% até 50% acima do limite permitido: <strong>R$ 195,23.</strong></li>
-                    <li>Acima de 50% do limite permitido: <strong>R$ 880,41</strong></li>
-                </ul>
-            </p>
+            <table>
+                <caption>Aqui segue os valores das multas de acordo com o limite de <strong>100km/h</strong></caption>
+                <tbody>
+                    <tr>
+                        <th>Velocidades de até 20% acima do limite permitido</th>
+                        <th>Velocidades de 20% até 50% acima do limite permitido</th>
+                        <th>Velocidades de acima de 50% do limite permitido</th>
+                    </tr>
+                    <tr>
+                        <td>R$ 130,16</td>
+                        <td>R$ 195,23</td>
+                        <td>R$ 880,41</td>
+                    </tr>
+                </tbody>
+            </table>
             <h3>Para saber se você será multado segue os campos de preenchimento:</h3>
             <input type="text" name="nome" id="nome" placeholder="Nome" onkeypress="chave(event)"> <br>
             <input type="radio" name="sexo" id="sexo" checked>Homem <input type="radio" name="sexo">Mulher<br>
@@ -41,7 +48,6 @@
     </main>
     <footer>
         <img src="imagens/logo-rodape-governo-do-estado-sp.png" alt="logo sp .gov">
-        <p>Site feito por <a href="https://github.com/Rogerp314" target="_blank" rel="external">Pedro Rogério</a>.</p>
     </footer>
 
     <script src="programaçao/multa.js"></script>
