@@ -21,7 +21,6 @@
     <main>
         <article>
             <h2>Segue aqui os parametros usados para calcular as multas:</h2>
-            <p>No Brasil a taxa de multa é de acordo com a porcentagem que o motorista passa do limite, sendo assim podemos exemplificar:</p>
             <table>
                 <caption>Aqui segue os valores das multas de acordo com o limite de <strong>100km/h</strong></caption>
                 <tbody>
@@ -38,11 +37,11 @@
                 </tbody>
             </table>
             <h3>Para saber se você será multado segue os campos de preenchimento:</h3>
-            <input type="text" name="nome" id="nome" placeholder="Nome" onkeypress="chave(event)"> <br>
+            <input type="text" name="nome" id="nome" class="formulario" placeholder="Nome" onkeypress="chave(event)"> <br>
             <input type="radio" name="sexo" id="sexo" checked>Homem <input type="radio" name="sexo">Mulher<br>
-            <input type="number" name="velocidade" id="velocidade" placeholder="Velocidade" onkeypress="chave(event)"> <br>
+            <input type="number" name="velocidade" id="velocidade" class="formulario" placeholder="Velocidade" onkeypress="chave(event)"> <br>
             <button id="resultado" onclick="resultado()">Começar</button>
-            <p>Resultado:</p>
+            <p id="res">Resultado:</p>
             <p id="resposta"></p>
         </article>
     </main>

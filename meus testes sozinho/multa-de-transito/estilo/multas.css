@@ -101,3 +101,45 @@ article>h2{
 article>p{
     padding: 10px;
 }
+h3{
+    text-align: center;
+    padding: 10px;
+}
+.formulario{
+    width: 500px;
+    height: 25px;
+    margin: auto;
+    text-indent: 7px;
+    border: 2px solid black;
+}
+#resultado{
+    background-color: blue;
+    color: white;
+    font: normal bold 1.3em Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#resultado:hover{
+    box-shadow: 1px 2px 4px #0000006c;
+}
+#resultado:active{
+    box-shadow: inset 1px 2px 4px #0000006c;
+}
+#res{
+    font: normal bold 1.5em var(--fonte-de-destaque);
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 510px){
+    header{
+        color: white;
+    }
+    .formulario{
+        width: 400px;
+    }
+}
