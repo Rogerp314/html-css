@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon-tabelas.svg" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mesclagem de células nas Tabelas</h1>
+    </header>
+    <main>
+        <!--
+            Essa aula serve para ensinar a mesclagem, que é nada mais nada menos que almentar, ou seja, deixar uma célula tomar o lugar de outra, sendo assim não ficara um buraco na tabela.
+        -->
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+                <!--Tirei a célula C
+                Existem dois tipos de expansão, sendo elas em forma de coluna e outra em forma de linha;
+                Nesse caso dessa tabela temos a mesclagem em forma de linha,
+                E para isso ocorrer temos que ir na célula que desejamos que tome o lugar da outra.
+                Obs: Se a expansão for para os lados é a mesclagem em forma de coluna pois é no referencial da tabela não da célula, e se for de pé é a mesclagem em forma de linha.
+                Como faz isso?
+                Simples, é só ir na tag da célula que deseja expandir e escrever a declaração 'colspan= o número de colunas espandidas' nesse caso é em colunas, em caso de linhas é 'rowspan = número de linhas expandidas'.
+                -->
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                <td rowspan="2">F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
