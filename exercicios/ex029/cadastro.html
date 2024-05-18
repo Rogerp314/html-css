@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/cadastro.css">
+    <title>Exercício de Tabelas</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício de Tabelas</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Cadastro</caption>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo" span="2">
+                <col class="cidade">
+                <col class="cprof">
+                <!--Fazendo essa configuração o próprio HTML5 já configura, então é só colocar as propriedades no CSS3. Se em col colocar a propriedade 'span' e um número teremos as propriedades CSS para o numeros de colunas colocadas em span.-->
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gabrielle Bueno</td>
+                    <td>Feminino</td>
+                    <td>17</td>
+                    <td>Biomédica</td>
+                </tr>
+                <tr>
+                    <td>Pedro Rogério</td>
+                    <td>Masculino</td>
+                    <td>21</td>
+                    <td>Desenvolvedor web</td>
+                </tr>
+                <tr>
+                    <td>Bruno Henrique</td>
+                    <td>Masculino</td>
+                    <td>19</td>
+                    <td>Engenheiro Eletrônico</td>
+                </tr>
+                <tr>
+                    <td>Mateus Augusto</td>
+                    <td>Masculino</td>
+                    <td>24</td>
+                    <td>Farmaceutico</td>
+                </tr>
+                <tr>
+                    <td>Marco Aurélio</td>
+                    <td>Masculino</td>
+                    <td>22</td>
+                    <td>Contador</td>
+                </tr>
+                <tr>
+                    <td>Yasmin Telini</td>
+                    <td>Feminino</td>
+                    <td>23</td>
+                    <td>Modelo</td>
+                </tr>
+            </tbody>
+        </table> <!--Modificar linhas é facil pois é só colocar um id ou class e suas propriedades, mas colunas é bem mais complicado. De uma forma burro para destacar uma coluna você tem que ir em cada uma das células da coluna ou no HTML5 temos uma tag nova que é a tag 'colgroup' que você pode colocar essa tag onde quiser na tabela, mas recomendo colocar abaixo do caption, sendo assim você ecreve a tag e dentro dela coloca-se a tag 'col' e o id ou class.-->
+    </main>
+</body>
+</html>

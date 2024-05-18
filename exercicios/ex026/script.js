@@ -14,3 +14,8 @@ function clique(){
     dados.style.backgroundColor='black'
     dados.style.color='red'
 }
+function cu(){
+    dados.innerHTML='cu'
+    dados.style.backgroundColor='gray'
+    
+}

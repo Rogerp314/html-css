@@ -14,7 +14,11 @@
 #central:hover{
     background-color: pink;
     color: red;
+    border-radius: 50%;
+    transition-duration: .5s
 }
 #central:active{
     color: green;
+    border-radius: 0px;
+    transition-duration: 1s;
 }

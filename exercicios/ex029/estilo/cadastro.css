@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    font-style: italic;
+    margin: 40px;
+}
+
+table{
+    width: 500px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+caption{
+    padding: 10px;
+    font: italic bolder 1.5em Times, serif;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.cnome{
+    background-color: red;
+}
+
+.csexo{
+    background-color: green;
+}
+
+.cidade{
+    color: blue;
+}
