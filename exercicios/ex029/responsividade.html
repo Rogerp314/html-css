@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsívas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        caption{
+            padding: 7px;
+            font: italic bolder 1.5em Times, serif;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        #caixa{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabelas em Telas Pequenas</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quas, provident obcaecati necessitatibus eius aliquid. Iusto in voluptatibus neque dicta, dolorem veniam saepe sed quasi placeat possimus iure, nam quam.</p>
+
+        <!--
+            A dica para fazer uma tabela responsiva de forma simples e fácil, é envelopar a tabela toda, ou seja, da tag '<table>' até '</table>' e logo depois você coloca as propriedades no CSS3 como 'overflow-x: auto;' e acabou, simples assim.
+        -->
+
+        <div id="caixa">
+            <table>
+                <caption>Tabelas Responsiveis</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Jan</th>
+                        <th scope="col">Fev</th>
+                        <th scope="col">Mar</th>
+                        <th scope="col">Abr</th>
+                        <th scope="col">Mai</th>
+                        <th scope="col">Jul</th>
+                        <th scope="col">Jun</th>
+                        <th scope="col">Ago</th>
+                        <th scope="col">Set</th>
+                        <th scope="col">Out</th>
+                        <th scope="col">Nov</th>
+                        <th scope="col">Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PlayStation 5</td>
+                        <td>02</td>
+                        <td>04</td>
+                        <td>75</td>
+                        <td>34</td>
+                        <td>45</td>
+                        <td>65</td>
+                        <td>82</td>
+                        <td>100</td>
+                        <td>23</td>
+                        <td>38</td>
+                        <td>56</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse Gamer</td>
+                        <td>34</td>
+                        <td>21</td>
+                        <td>43</td>
+                        <td>564</td>
+                        <td>65</td>
+                        <td>34</td>
+                        <td>8</td>
+                        <td>223</td>
+                        <td>53</td>
+                        <td>87</td>
+                        <td>45</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>Iphone 13</td>
+                        <td>32</td>
+                        <td>24</td>
+                        <td>43</td>
+                        <td>02</td>
+                        <td>432</td>
+                        <td>06</td>
+                        <td>43</td>
+                        <td>32</td>
+                        <td>86</td>
+                        <td>43</td>
+                        <td>57</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Casaco</td>
+                        <td>432</td>
+                        <td>343</td>
+                        <td>32</td>
+                        <td>04</td>
+                        <td>09</td>
+                        <td>90</td>
+                        <td>76</td>
+                        <td>45</td>
+                        <td>34</td>
+                        <td>53</td>
+                        <td>53</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Notebook Gamer</td>
+                        <td>23</td>
+                        <td>324</td>
+                        <td>24</td>
+                        <td>65</td>
+                        <td>34</td>
+                        <td>453</td>
+                        <td>34</td>
+                        <td>432</td>
+                        <td>23</td>
+                        <td>76</td>
+                        <td>87</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor</td>
+                        <td>234</td>
+                        <td>23</td>
+                        <td>23</td>
+                        <td>432</td>
+                        <td>12</td>
+                        <td>321</td>
+                        <td>13</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>12</td>
+                        <td>321</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Pedra de Sal</td>
+                        <td>01</td>
+                        <td>422</td>
+                        <td>324</td>
+                        <td>32</td>
+                        <td>43</td>
+                        <td>65</td>
+                        <td>6543</td>
+                        <td>43</td>
+                        <td>342</td>
+                        <td>32</td>
+                        <td>234</td>
+                        <td>23</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
