@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+.coracao-forma {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(250, 184, 66, 0.8);
+}
+
+.coracao-forma::before,
+.coracao-forma::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(250, 184, 66, 0.8);
+  border-radius: 50%;
+}
+
+.coracao-forma::before {
+  left: -100px;
+}
+
+.coracao-forma::after {
+  right: -100px;
+  top: -100px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="coracao-forma"></div>
+</body>
+</html>
