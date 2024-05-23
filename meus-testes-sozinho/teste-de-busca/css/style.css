@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#busca{
+    padding: 10px;
+    text-align: center;
+}
+
+#pesquisa{
+    height: 30px;
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+#botao{
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(51, 51, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botao:hover{
+    background-color: rgb(86, 86, 255);
+    transition: .5s;
+}
+
+#resultado{
+    font: italic bolder 1.3em Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    list-style: none;
+}
