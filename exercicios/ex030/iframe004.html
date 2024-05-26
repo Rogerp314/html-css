@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        a{
+            color: black;
+            font: italic normal 1.2em times;
+            text-decoration: none;
+        }
+
+        a:hover{
+            font-weight: bolder;
+            text-decoration: underline;
+
+        }
+
+        ul{
+            text-align: center;
+        }
+
+        li{
+            display: inline;
+            list-style: none;
+            padding: 50px;
+        }
+
+        iframe{
+            width: 99vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faça uma escolha</h1>
+    </header>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit eius saepe accusamus a nesciunt dignissimos iste molestias corporis, soluta enim quod corrupti! Corrupti fugiat mollitia, dolores quasi et quaerat vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro deserunt earum nisi voluptatem laborum, adipisci reiciendis commodi inventore at libero quod dicta, aliquam fuga autem. Eligendi natus iusto voluptatibus eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque autem quis ex molestias possimus quo sunt exercitationem, omnis vero repellat deleniti ipsa iste error iure tempore itaque quos fuga.</p>
+
+
+    <nav>
+        <ul>
+            <!--Para fazer com que quando o usuário clique no link e seja carregado no iframe precisamos colocar um 'name' no iframe e colocar esse 'name' no 'target' do link que queira carregar.-->
+            <li><a href="paginas-extras/pag001.html" target="tela" rel="next">Primeira página</a></li>
+            <li><a href="paginas-extras/pag002.html" target="tela" rel="next">Segunda página</a></li>
+            <li><a href="paginas-extras/pag003.html" target="tela" rel="next">Terceira página</a></li>
+        </ul>
+    </nav>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit eius saepe accusamus a nesciunt dignissimos iste molestias corporis, soluta enim quod corrupti! Corrupti fugiat mollitia, dolores quasi et quaerat vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro deserunt earum nisi voluptatem laborum, adipisci reiciendis commodi inventore at libero quod dicta, aliquam fuga autem. Eligendi natus iusto voluptatibus eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque autem quis ex molestias possimus quo sunt exercitationem, omnis vero repellat deleniti ipsa iste error iure tempore itaque quos fuga.</p>
+
+    <iframe src="" name="tela">
+        <p>Infelizmente seu navegador não suporta <strong>Iframes</strong>, então siga o <a href="#" target="_blank" rel="next">link</a>.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam aliquid ipsam consectetur dolorem minus sunt officia magni, impedit, eveniet eos ad omnis facilis cumque alias, sint in distinctio assumenda qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsum, adipisci aut consequatur ea iure dicta optio nisi possimus rem officia quia autem maiores quidem. Iusto praesentium voluptas rem numquam.</p>
+</body>
+</html>
