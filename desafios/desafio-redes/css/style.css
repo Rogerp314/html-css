@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+html,body{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#fone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/frame-iphone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 310px;
+    height: 625px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#tela{
+    width: 265px;
+    height: 500px;
+}
+
+img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+img:hover{
+    transition: .25s;
+    border: 2px solid white;
+    top: -5px;
+}
+
+#redes{
+    display: block;
+    text-align: center;
+}
