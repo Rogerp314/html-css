@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+    <style>
+
+        header{
+            text-align: center;
+        }
+
+        form input{
+            text-indent: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fazendo meu <strong>primeiro</strong> fomulário!</h1>
+    </header>
+
+    <main>
+        <!--De uma maneira bem simples um formulário funciona como uma tabela com a tag de delimitação sendo <form></form>-->
+        <!--Obs: Se eu quiser que o campo já esteje preenchido antes do usuário colocar é só colocar o atributo 'value' e se eu quiser que o nome do campo esteje dentro do input é só colocar o atributo 'placeholder'-->
+        <form action="">
+            <p><input type="text" name="nome" id="nome" placeholder="Nome"></p> 
+            <p><input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </main>
+</body>
+</html>
