@@ -24,8 +24,8 @@
         <!--De uma maneira bem simples um formulário funciona como uma tabela com a tag de delimitação sendo <form></form>-->
         <!--Obs: Se eu quiser que o campo já esteje preenchido antes do usuário colocar é só colocar o atributo 'value' e se eu quiser que o nome do campo esteje dentro do input é só colocar o atributo 'placeholder'-->
         <form action="index.html"> <!--Se eu quiser eu posso colocar a propriedade 'autocomplete=off' para desligar a mecânica de abas de nome.-->
-
-            <p><input type="text" name="nome" id="nome" placeholder="Nome" onkeypress="teste()"></p> 
+            <!--O padrão de segurança do html é GET, mas tbm temos o POST. Na hora de escolher o tipo de fomulário o visal ja da. -->
+            <p><input type="text" name="nome" id="nome" method="POST" placeholder="Nome" onkeypress="teste()"></p> 
             <p><input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" onkeypress="teste()"></p>
             <p>
                 <label for="idade">Idade</label>

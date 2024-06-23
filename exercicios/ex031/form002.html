@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulários</title>
+</head>
+<body>
+    <header>
+        <h1>Teste de Fomulário</h1>
+    </header>
+
+    <!--Não estou usando div´s pois tem q configurar o espaçamento com CSS-->
+    <main>
+        <!--Sempre existe um campo obrigatório, ent para fazer com que um campo se torne obrigatório temos que colocar um atributo exttra no input que queremos tornar obrigatório sendo ele 'required'. Se quiser q o nome ou a senha tenha tamanho minimo ou maximo tem que colocar respctivamente os atributos 'minlength' e 'maxlength', o atributo 'size' serve para declarar quantos caractéres mostra na caixa por vez. Para facilitar a experiencia do usuário pode colocar o autocomplete e temos que dizer o que cada caixa é colocando o autocomplete e seu type. A diferença entre o 'new´password' e 'curret-password' é que respectivamente uma é para criar uma nova senha e outra é para login.-->
+        <form action="js/javascript.js" method="post">
+            <p>
+                <label for="usuario">Usuário:</label>
+                <input type="text" name="usuario" id="usuario" required minlength="4" maxlength="20" size="15" autocomplete="username">
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" autocomplete="new-password">
+            </p>
+            <p>
+                <input type="reset" value="Limpar"><!--Serve para limpar todo o formulário-->
+                <input type="submit" value="Enviar"> <!--Serve para mandar os dados do formulário-->
+            </p>
+        </form>
+    </main>
+</body>
+</html>
